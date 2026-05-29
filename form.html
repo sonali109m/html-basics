@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Learn Form Tags</h2>
+    <!-- action for background access -->
+    <form action="backend.php">
+        <!-- fieldset for form bordeer area -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="name">Namne:</label><br>
+                <input type="text" id="name"> 
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <label for="reg">Registration number:</label><br>
+                <input type="number" id="reg">
+            </div>
+            <div>
+                <label for="phn">Phone number:</label><br>
+                <input type="tel" id="phn">
+            </div>
+            <div>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="age">Are you eligable:</label>
+                <input type="checkbox" id="age">
+            </div>
+            <div>
+                Gender : Male<input type="radio" name="mygender">Female<input type="radio" name="mygender">
+                Other<input type="radio" name="mygender">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+            <!-- text area input is for a big paragraph or massages. -->
+             <div>
+                <label for="textarea">Write about yourself:</label>
+                <textarea name="Myinfo" id="textarea" cols="50" rows="10">Information</textarea>
+             </div>
+        </fieldset>
+    </form>
+</body>
+</html>

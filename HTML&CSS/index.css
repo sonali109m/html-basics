@@ -1,0 +1,29 @@
+/* CSS element selector */
+span{
+    color: tomato;
+    font: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: bisque;
+}
+/* internal and external css's presidency works based on likns sequence. */
+/* inlines presidence highest. */
+p{
+    color: tomato;
+    font: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: bisque;
+}
+/* id selector */
+#para1{
+    color: brown;
+    background-color: palegoldenrod;
+}
+/* class selector */
+.para2{
+    color: green;
+    background-color: greenyellow;
+}
+/* group selector */
+span,p,h1{
+    font-style: italic;
+}

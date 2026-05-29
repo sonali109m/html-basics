@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover/Psudeo selectors</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        border: 1px solid gray;
+        margin: 13px auto;
+        padding: 12px 13px;
+        background-color: rgb(231, 220, 222);
+        width: 658px;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .btn:hover{
+        background-color: rgb(246, 177, 177);
+    }
+    .btn:visited{
+        background-color: rgb(142, 142, 248);
+    }
+    .btn:active{
+        background-color: rgb(193, 138, 248);
+    }
+    .btn{
+        background-color: rgb(212, 212, 247);
+        border: none;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+    <div class="container" id="cont">
+        <h1>Lets Learn about Psudeo selectoers!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum mollitia vitae quas cumque sed asperiores dignissimos reiciendis delectus omnis, debitis, nobis necessitatibus nisi esse nesciunt nulla illo praesentium culpa.</p>
+        <a href="https://facebook.com"class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    
+</body>
+</html>
