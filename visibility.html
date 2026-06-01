@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .content{
+            margin: 5px;
+            padding:10px 10px;
+        }
+       #box1{
+        margin: 5px;
+            padding:10px 10px;
+        border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: blue;
+       }
+       #box2{
+        /* visibility: hidden hides the element but shows its space */
+        /* visibility: hidden; */
+        /* display: none hides both element and its space */
+        /* display: none; */
+        margin: 5px;
+       border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: peachpuff;
+       }
+       #box3{
+        position: absolute;
+        z-index: 1;
+        margin: 5px;
+            padding:10px 10px;
+       border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+       }
+       #box4{
+        position: relative;
+        z-index: 2;
+        margin: 5px;
+       border: 1px solid black;
+        height: 150px;
+        width: 150px;
+        background-color:green;
+       }
+    </style>
+</head>
+<body>
+    <h3>Visibility and z-index</h3>
+    <div class="content">
+        <div class="box" id="box1">First Box</div>
+        <div class="box" id="box2">Second Box</div>
+        <div class="box" id="box3">Third Box</div>
+        <div class="box" id="box4">Fourth Box</div>
+    </div>
+</body>
+</html>
