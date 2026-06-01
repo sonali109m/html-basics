@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Properties</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            margin: auto;
+            height: 250px;
+            display: flex;
+            /* flex-direction: column;(Cross axis) */
+            /* flex-direction:  row; (default) */
+            /* starts from bottom of cross axis  */
+            /* flex-direction: column-reverse;*/
+            /* row-reverse starts from end of the main axis  */
+            /* flex-direction: row-reverse; */
+            /* flex wrap used to wrap flex items to make it responsive */
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap;(default) */
+            /* align-items: baseline; */
+            /* align-items: center;(vartically) */
+            /* align-items: end; */
+            /* align-items: self-end; */
+            /* justify-content: left; */
+            /* justify-content: right; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            
+        }
+        .flexbox{
+            border: 3px solid blue;
+            margin: 5px 5px;
+            /* margin: auto; */
+            width:33%;
+            /* hei */
+        }
+        #box2{
+            flex-basis: 200px;
+            flex-grow: 2;
+            /* flex shrink doesnt work without flax basis/ fleax grow */
+            flex-shrink: 1;
+        }
+         #box5{
+            flex-grow: 2;
+            /* flex flex-shrink: 2; */
+            }
+        
+    </style>
+</head>
+<body>
+    <h3>Differents types of flex properties.</h3>
+    <div class="container">
+        <div class="flexbox" id="box1">flexbox-1</div>
+        <div class="flexbox" id="box2">flexbox-2</div>
+        <div class="flexbox" id="box3">flexbox-3</div>
+        <div class="flexbox" id="box4">flexbox-4</div>
+        <div class="flexbox" id="box5">flexbox-5</div>
+        <div class="flexbox" id="box6">flexbox-6</div>
+    </div>
+    
+</body>
+</html>
