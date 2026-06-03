@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid blue;
+            /* width: 400px; */
+            /* height: 300px; */
+            width: 100vw;
+            height:120vh;
+        }
+        #first{
+            font-size: 3rem; 
+            padding: 2rem;
+        }
+        #second{
+            font-size: 2em;
+            padding: 2em;
+        }
+
+    </style>
 </head>
 <body>
-    <h3>rem is used as root elements unit</h3>
-    <h3>em is used as parent elements unit</h3>
-    <h3>vh is for viewport height</h3>
-    <h3>vw is for viewport width</h3>
+    <div class="container">
+        <h3 id="first">rem is used as root elements unit</h3>
+        <h3 id="second">em is used as parent elements unit</h3>
+        <h3 id="3rd">vh is for viewport height</h3>
+        <h3 id="4th">vw is for viewport width</h3>
+    </div>
 </body>
 </html>
